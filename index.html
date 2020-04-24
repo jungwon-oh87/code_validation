@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Validation</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="instruction">
+        <p>We've sent you 4 digits to your cell phone.</p>
+        <p>Please validate the digits</p>
+      </div>
+
+      <div class="input-container" id="input-container">
+        <input
+          type="password"
+          oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+          maxlength="1"
+          id="first-input"
+          class="input"
+        />
+        <input
+          type="password"
+          oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+          maxlength="1"
+          class="input"
+        />
+        <input
+          type="password"
+          oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+          maxlength="1"
+          class="input"
+        />
+        <input
+          type="password"
+          oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+          maxlength="1"
+          class="input"
+        />
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
